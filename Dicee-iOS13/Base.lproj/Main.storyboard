@@ -17,26 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QPP-gW-bv9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QPP-gW-bv9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="C9r-SJ-kkF">
-                                <rect key="frame" x="87" y="139" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="C9r-SJ-kkF">
+                                <rect key="frame" x="109" y="139" width="196" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="3Rr-oT-Dl2"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="H4J-HL-yOT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="H4J-HL-yOT">
                                 <rect key="frame" x="39" y="388" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="H4J-HL-yOT" secondAttribute="height" multiplier="1:1" id="Bgk-Uc-Fqx"/>
+                                    <constraint firstAttribute="width" constant="120" id="baC-Mt-sce"/>
+                                    <constraint firstAttribute="height" constant="120" id="vGa-vU-qV7"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-yA-b90">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="DV6-yA-b90">
                                 <rect key="frame" x="262" y="388" width="120" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DV6-yA-b90" secondAttribute="height" multiplier="1:1" id="6Hf-Jb-lhA"/>
+                                    <constraint firstAttribute="width" constant="120" id="RYW-oN-049"/>
+                                    <constraint firstAttribute="height" constant="120" id="tJw-9H-lyR"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykw-QV-11a">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykw-QV-11a">
                                 <rect key="frame" x="158" y="595" width="98" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.56480497119999995" green="0.1689142287" blue="0.1675068438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="3wj-QI-LS5"/>
+                                    <constraint firstAttribute="width" constant="98" id="mDi-77-UUQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,6 +60,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DV6-yA-b90" firstAttribute="leading" secondItem="QPP-gW-bv9" secondAttribute="trailing" constant="-152" id="2Z9-m2-P3U"/>
+                            <constraint firstItem="Ykw-QV-11a" firstAttribute="centerX" secondItem="QPP-gW-bv9" secondAttribute="centerX" id="Cwh-t8-B0b"/>
+                            <constraint firstAttribute="bottom" secondItem="QPP-gW-bv9" secondAttribute="bottom" id="NLf-y8-fE8"/>
+                            <constraint firstItem="QPP-gW-bv9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RXY-bg-QaA"/>
+                            <constraint firstItem="QPP-gW-bv9" firstAttribute="leading" secondItem="H4J-HL-yOT" secondAttribute="trailing" constant="-159" id="WS6-pF-82R"/>
+                            <constraint firstItem="QPP-gW-bv9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZXh-7K-RRZ"/>
+                            <constraint firstItem="Ykw-QV-11a" firstAttribute="top" secondItem="H4J-HL-yOT" secondAttribute="bottom" constant="87" id="Zef-2j-dfS"/>
+                            <constraint firstItem="C9r-SJ-kkF" firstAttribute="centerX" secondItem="QPP-gW-bv9" secondAttribute="centerX" id="cty-fl-huj"/>
+                            <constraint firstItem="H4J-HL-yOT" firstAttribute="top" secondItem="C9r-SJ-kkF" secondAttribute="bottom" constant="121" id="fio-zc-RFp"/>
+                            <constraint firstItem="Ykw-QV-11a" firstAttribute="top" secondItem="DV6-yA-b90" secondAttribute="bottom" constant="87" id="ggn-Eh-OPq"/>
+                            <constraint firstItem="QPP-gW-bv9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xPW-bW-V0d"/>
+                            <constraint firstItem="QPP-gW-bv9" firstAttribute="top" secondItem="C9r-SJ-kkF" secondAttribute="bottom" constant="-267" id="zLs-sd-7Ck"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="diceImageViewOne" destination="H4J-HL-yOT" id="LE4-bG-8HP"/>
